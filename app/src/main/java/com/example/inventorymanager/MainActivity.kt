@@ -166,17 +166,14 @@ fun InventoryItem(
                 text = "Current Stock: ${inventory.count}"
             )
 
-            Text(
-                text = "Low Stock Threshold: $lowStockThreshold"
-            )
 
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
                 text = if (isLowStock) {
-                    "⚠ Low Stock"
+                    $"Low Stock"
                 } else {
-                    "✓ Stock Available"
+                    "Stock Available"
                 }
             )
 
